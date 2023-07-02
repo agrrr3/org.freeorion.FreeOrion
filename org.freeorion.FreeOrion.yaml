@@ -41,13 +41,6 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     sources:
-      - type: archive
-        url: https://github.com/freeorion/freeorion/archive/v0.5.tar.gz
-        sha256: b95667957047e02cf4bf4b230bf3ad02edbeffff6be600cc38a62cb115adb10c
-        x-checker-data:
-          type: anitya
-          project-id: 12152
-          stable-only: true
-          url-template: https://github.com/freeorion/freeorion/archive/v$version.tar.gz
-      - type: patch
-        path: appdata.patch
+      - type: git
+        url: https://github.com/freeorion/freeorion.git
+
